@@ -6,7 +6,7 @@ Adds possibility of Sub-Class for Actors with full trait support
 
 ## What It Does
 
-This plugin allows actors to have a subclass in addition to their main class.
+PSYCHRONIC_SubclassMZ.js.
 
 ## Plugin File
 
@@ -17,7 +17,14 @@ This plugin allows actors to have a subclass in addition to their main class.
 
 ## Plugin Commands
 
-- `refreshSubclass`
+### Refresh Subclass
+
+- Command: `refreshSubclass`
+- Description: Forces an actor to refresh their subclass data
+
+Arguments:
+
+- `actorId` (Actor ID) - type: actor; default: 1: The ID of the actor to refresh
 
 ## Installation
 
@@ -27,6 +34,8 @@ This plugin allows actors to have a subclass in addition to their main class.
 4. Configure any plugin parameters or commands listed below.
 
 ## Full Plugin Help
+
+PSYCHRONIC_SubclassMZ.js
 
 This plugin allows actors to have a subclass in addition to their main class.
 
@@ -64,16 +73,6 @@ actorId: The ID of the actor to refresh
 
 Free for commercial and non-commercial use.
 Credit Psychronic if you use this plugin.
-
-@command refreshSubclass
-@text Refresh Subclass
-@desc Forces an actor to refresh their subclass data
-
-@arg actorId
-@text Actor ID
-@desc The ID of the actor to refresh
-@type actor
-@default 1
 
 ## Source
 
