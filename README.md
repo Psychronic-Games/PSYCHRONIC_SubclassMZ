@@ -1,12 +1,49 @@
 # PSYCHRONIC_SubclassMZ
 
+**RPG Maker MZ Plugin**
+
 Adds possibility of Sub-Class for Actors with full trait support
 
 ## What It Does
 
 This plugin allows actors to have a subclass in addition to their main class.
 
-## Highlights
+## Plugin File
+
+- `PSYCHRONIC_SubclassMZ.js`
+- Target: RPG Maker MZ
+- Author: Psychronic
+- URL: https://psychronic.itch.io
+
+## Plugin Commands
+
+- `refreshSubclass`
+
+## Installation
+
+1. Download `PSYCHRONIC_SubclassMZ.js`.
+2. Place it in your RPG Maker MZ project's `js/plugins/` folder.
+3. Enable it from the RPG Maker Plugin Manager.
+4. Configure any plugin parameters or commands listed below.
+
+## Full Plugin Help
+
+This plugin allows actors to have a subclass in addition to their main class.
+
+### How to Use
+
+In the Notes field of an Actor, add:
+<Subclass: X>
+
+Where X is the ID of the class you want as the subclass.
+
+Example: <Subclass: 54>
+
+IMPORTANT: After adding a subclass tag to an actor, you must either:
+- Start a new game, OR
+- Remove and re-add the actor to your party
+
+### Features
 
 - Actor stats are averaged between main class and subclass
 - Actor learns skills from both main class and subclass
@@ -18,40 +55,29 @@ This plugin allows actors to have a subclass in addition to their main class.
 - Special flags and party abilities are combined from both classes
 - Subclass is displayed in menus alongside main class
 
-## Plugin Commands
+### Plugin Commands
 
-- refreshSubclass
+Refresh Subclass - Forces an actor to refresh their subclass data
+actorId: The ID of the actor to refresh
 
-## Basic Usage
+### Terms of Use
 
-In the Notes field of an Actor, add:
-<Subclass: X>
-Where X is the ID of the class you want as the subclass.
-Example: <Subclass: 54>
-IMPORTANT: After adding a subclass tag to an actor, you must either:
-- Start a new game, OR
-- Remove and re-add the actor to your party
+Free for commercial and non-commercial use.
+Credit Psychronic if you use this plugin.
 
-## Compatibility
+@command refreshSubclass
+@text Refresh Subclass
+@desc Forces an actor to refresh their subclass data
 
-- RPG Maker MZ
-- JavaScript plugin for `js/plugins/`
-
-## Installation
-
-1. Download `PSYCHRONIC_SubclassMZ.js`.
-2. Place it in your RPG Maker MZ project's `js/plugins/` folder.
-3. Enable it from the RPG Maker Plugin Manager.
+@arg actorId
+@text Actor ID
+@desc The ID of the actor to refresh
+@type actor
+@default 1
 
 ## Source
 
-This version was exported from the RPG Reactor Complex template source plugin folder.
-
-## Author
-
-Psychronic
-
-https://psychronic.itch.io
+This standalone repository is generated from the latest PSYCHRONIC plugin source in the RPG Reactor Complex template.
 
 ## License
 
